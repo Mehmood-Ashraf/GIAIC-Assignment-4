@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image"
 import star from "../../Assets/Star 1.png"
 import RightVector from "../../Assets/customers vector.png"
