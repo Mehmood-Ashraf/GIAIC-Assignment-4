@@ -1,6 +1,34 @@
+// import type { Config } from "tailwindcss";
+
+// export default {
+//   content: [
+//     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+//   ],
+//   theme: {
+//     extend: {
+//       screens:{
+//         'sm-small': '390px',
+//         'xl-large': '1440px',
+//       },
+//       fontFamily: {
+//         satoshi: ["Satoshi", "sans-serif"],
+//         integralCF: ["Integral CF", "sans-serif"]
+//       },
+//       colors: {
+//         background: "var(--background)",
+//         foreground: "var(--foreground)",
+//       },
+//     },
+//   },
+//   plugins: [],
+// } satisfies Config;
+
+
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +36,14 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm-small': '390px',
+        'xl-large': '1440px',
+      },
+      fontFamily: {
+        satoshi: ["Satoshi", "sans-serif"],
+        integralCF: ["Integral CF", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -15,4 +51,6 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
